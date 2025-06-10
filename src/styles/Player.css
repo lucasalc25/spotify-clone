@@ -1,0 +1,10 @@
+.track-card {
+  padding: 15px;
+  background-color: #282828;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.track-card:hover {
+  transform: scale(1.05);
+}
