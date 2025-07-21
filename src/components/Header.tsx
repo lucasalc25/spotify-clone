@@ -4,7 +4,7 @@ import { CircleChevronDown, House, PanelTop, Search } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="flex items-center w-full h-16">
+    <header className="flex items-center w-full h-16 bg-black">
       {/* Logo */}
       <a href="#" className="flex items-center justify-center min-w-18 h-8">
         <Image
@@ -42,12 +42,12 @@ export default function Header() {
                    hover:bg-[#2A2A2A] hover:shadow-[inset_0_0_0_1px] hover:shadow-[hsla(0,0%,100%,0.1)]"
             >
               {/* Ícone de pesquisa */}
-              <div className="px-3 flex items-center justify-center">
+              <button className="px-3 flex items-center justify-center cursor-pointer">
                 <Search
                   size={24}
                   className=" transition-colors duration-220 ease-in group-hover:text-white"
                 />
-              </div>
+              </button>
 
               {/* Campo de input */}
               <div className=" flex flex-1 items-center max-[808px]:hidden">
@@ -63,7 +63,7 @@ export default function Header() {
                 <div className="absolute left-0 h-6 w-px bg-zinc-500" />
                 <PanelTop
                   size={24}
-                  className="group-hover:text-white transition-colors duration-220 ease-in relative z-10"
+                  className="group-hover:text-white transition-colors duration-220 ease-in relative z-10 cursor-pointer"
                 />
               </div>
             </form>

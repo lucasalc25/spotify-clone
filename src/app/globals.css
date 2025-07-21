@@ -4,7 +4,91 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.bg-noise-gradient {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), #121212),
-    url("/spotify-clone/public/images/bg_noise.jpg");
+.play-visible {
+  visibility: visible;
+}
+
+@media (min-width: 992px) {
+  .main-footer-container {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.main-footer-container {
+  display: flex;
+  margin-top: 32px;
+}
+
+@media (min-width: 992px) {
+  .main-footer {
+    flex: 1 1 50%;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-footer {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-footer-containers {
+    width: 20%;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-footer-containers {
+    width: 40%;
+    margin-right: 24px;
+  }
+}
+
+.main-footer-containers {
+  margin-bottom: 32px;
+}
+
+.main-footer-containers ul p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.main-footer-containers ul a {
+  display: block;
+  margin: 8px 0px;
+  width: fit-content;
+  color: #b3b3b3;
+  font-size: 1rem;
+}
+
+.main-footer-containers ul a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* scrollbar-escondida por padrão */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE e Edge */
+}
+
+/* scrollbar visível no hover */
+.scrollbar-hover:hover::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollbar-hover:hover {
+  scrollbar-width: thin;
+}
+.scrollbar-hover:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.5);
+  border-radius: 9999px;
+}
+.scrollbar-hover:hover::-webkit-scrollbar-track {
+  background-color: transparent;
 }

@@ -4,14 +4,14 @@ import { Plus, Globe } from "lucide-react";
 export default function Sidebar() {
   return (
     <aside
-      className="min-w-[286px] max-w-[420px] w-full
-            bg-[#121212] text-white overflow-hidden rounded-lg 
+      className="min-w-[286px] w-full
+            bg-[#121212] text-white overflow-hidden rounded-md 
             transition-all duration-300 ease-in-out"
     >
       {/* Header da sidebar */}
       <header className="flex justify-between h-[71px]">
         <div className="flex flex-row justify-between items-center w-full h-[51px] pb-2 pt-4 px-3 ml-1">
-          <h1 className="text-base font-semibold">Sua biblioteca</h1>
+          <h1 className="text-base font-semibold">Sua Biblioteca</h1>
 
           {/* Botão criar playlist */}
           <button
@@ -63,7 +63,7 @@ export default function Sidebar() {
 
       {/* Sidebar Footer */}
       <div className="mt-52">
-        <div className="px-6 text-start mb-8">
+        <div className="px-6 text-start mb-6">
           <div className="flex flex-wrap">
             <div className="mr-4 mb-2">
               <a href="#">
@@ -108,10 +108,10 @@ export default function Sidebar() {
             <span className="text-xs  hover:underline">Cookies</span>
           </a>
         </div>
-        <div className="mb-8 px-6">
-          <button className="flex gap-2 items-center border-[1px] border-solid border-zinc-400 rounded-full py-1 px-4 cursor-pointer transition-all .15s hover:scale-[1.04] hover:border-zinc-200">
+        <div className="px-6">
+          <button className="flex gap-2 items-center border-[1px] border-solid border-zinc-400 rounded-full py-1 px-3 cursor-pointer transition-all .15s hover:scale-[1.04] hover:border-zinc-200">
             <Globe size={18} className="text-zinc-200" />
-            <span className="text-zinc-200 text-sm font-[700]">
+            <span className="tracking-tight text-zinc-200 text-sm font-[700]">
               Português do Brasil
             </span>
           </button>
