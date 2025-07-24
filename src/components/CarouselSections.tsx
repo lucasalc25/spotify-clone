@@ -2,10 +2,26 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 
+interface Slide {
+  src: string;
+  title: string;
+  description: string;
+}
+
+interface CarouselSectionsProps {
+  title: string;
+  slides: Slide[];
+  keyPrefix?: string;
+}
+
 const slideWidth = 195;
 const slidesToShow = 7;
 
-export default function CarouselSections({ title, slides, keyPrefix = "" }) {
+export default function CarouselSections({
+  title,
+  slides,
+  keyPrefix = "",
+}: CarouselSectionsProps) {
   const [startIndex, setStartIndex] = useState(0);
 
   const canGoPrev = startIndex > 0;

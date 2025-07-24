@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Image from "next/image";
 import { CircleChevronDown, House, PanelTop, Search } from "lucide-react";
 
 export default function Header() {
@@ -7,11 +7,10 @@ export default function Header() {
     <header className="flex items-center w-full h-16 bg-black">
       {/* Logo */}
       <a href="#" className="flex items-center justify-center min-w-18 h-8">
-        <Image
-          src="/images/logo_spotify.png"
+        <img
+          src="./images/logo_spotify.png"
           alt="Logo do projeto"
-          width={33}
-          height={33}
+          className="w-8 h-8"
         />
       </a>
 

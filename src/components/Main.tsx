@@ -4,12 +4,11 @@ import "swiper/css/navigation";
 import CarouselSections from "./CarouselSections";
 import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa6";
 
-// Exemplo de dados
 const carousels = [
   {
     title: "Músicas em alta",
     slides: [...Array(10)].map((_, i) => ({
-      src: `/images/trending_musics/${i + 1}.jpg`,
+      src: `./images/trending_musics/${i + 1}.jpg`,
       title: `Música ${i + 1}`,
       description: "Nome da música",
     })),
@@ -17,7 +16,7 @@ const carousels = [
   {
     title: "Artistas populares",
     slides: [...Array(10)].map((_, i) => ({
-      src: `/images/artists/${i + 1}.jpg`,
+      src: `./images/artists/${i + 1}.jpg`,
       title: `Artista ${i + 1}`,
       description: "Nome do artista",
     })),
@@ -25,7 +24,7 @@ const carousels = [
   {
     title: "Singles e álbuns que todo mundo gosta",
     slides: [...Array(10)].map((_, i) => ({
-      src: `/images/everyone_likes/${i + 1}.jpg`,
+      src: `./images/everyone_likes/${i + 1}.jpg`,
       title: `Álbum ${i + 1}`,
       description: "Destaque da semana",
     })),
@@ -33,7 +32,7 @@ const carousels = [
   {
     title: "Estações de rádio populares",
     slides: [...Array(10)].map((_, i) => ({
-      src: `/images/popular_radios/${i + 1}.jpg`,
+      src: `./images/popular_radios/${i + 1}.jpg`,
       title: "",
       description: "Artistas",
     })),
@@ -41,7 +40,7 @@ const carousels = [
   {
     title: "Paradas em destaque",
     slides: [...Array(6)].map((_, i) => ({
-      src: `/images/featured_stops/${i + 1}.jpg`,
+      src: `./images/featured_stops/${i + 1}.jpg`,
       title: "",
       description:
         "Mundo: seu relatório semanal das faixas mais tocadas no momento.",
@@ -50,7 +49,7 @@ const carousels = [
   {
     title: "Começou o verão!",
     slides: [...Array(10)].map((_, i) => ({
-      src: `/images/summer/${i + 1}.jpg`,
+      src: `./images/summer/${i + 1}.jpg`,
       title: "",
       description: `Descrição ${i + 1}`,
     })),
